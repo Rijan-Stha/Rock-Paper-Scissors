@@ -9,6 +9,10 @@ const comp = document.querySelector('.computer');
 const result = document.querySelector('#result h3 ');
 const score = document.querySelector('#score-count');
 let count =0;
+const music = new Audio('a-robust-crew.mp3');
+window.onload = ()=>{
+    music.play();
+};
 //UI settings
 class UI{
     static rules(){
