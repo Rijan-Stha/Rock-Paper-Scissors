@@ -3,10 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rock, Paper and Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="whole-container">
+        <header class="heading flex">
+            <div id="logo">
+                <img src="/images/logo.svg" alt="">
+            </div>
+            <div id="score">
+                <p id="score-title">Score</p>
+                <p id="score-count">0</p>
+            </div>
+        </header>
+
+        <main id="game-container">
+            <section id="choose-section">
+                
+                    <img src="/images/bg-triangle.svg" id="triangle" alt="Choose">
+                    <div class="item bg-paper" id="paper" aria-pressed="false">
+                        <div id="item-el">
+                            <img src="/images/icon-paper.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item bg-scissors" id="scissors" aria-pressed="false">
+                        <div id="item-el">
+                            <img src="/images/icon-scissors.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item bg-rock" id="rock" aria-pressed="false">
+                        <div id="item-el">
+                            <img src="/images/icon-rock.svg" alt="">
+                        </div>
+                    </div>
+        
+            </section>
+            <section class="play-section flex">
+                <div class="picked-item">
+                    <h2>You picked</h2>
+                    <div class="choosed human">
+                      
+                    </div>
+                </div>
+                <div id="result">
+                    <h3></h3>
+                    <div id="replay-button">Play Again</div>
+                </div>
+                <div class="picked-item">
+                    <h2>The house picked</h2>
+                    <div class="choosed computer"></div>
+                </div>
+            </section>
+        </main>
+        <aside id="rule-button" aria-pressed="false">
+            Rules
+        </aside>
+        
+        <div class="card">
+        <div id="rules-card" class="flex">
+            <div id="rule" class="flex">
+                <span id="rule-title">Rules</span>
+                <span id="close"><img src="/images/icon-close.svg" alt=""></span>
+            </div>
+            <div class="rules-img">
+                <img src="/images/image-rules.svg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
